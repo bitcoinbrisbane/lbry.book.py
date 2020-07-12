@@ -57,6 +57,7 @@ A lbry.io channel is created with your PGP/GPG pub key finger print
 }
 ```
 
+![ScreenShot](Screenshot from 2020-07-12 15-51-29.png)
 
 ## Notes and thanks
 

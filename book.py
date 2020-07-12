@@ -43,23 +43,23 @@ def downloadPGPKey(url):
 
 
 def createPost(title, body):
-    gpg = gnupg.GPG(gnupghome="/home/lucascullen")
+    gpg = gnupg.GPG(gnupghome="/home/lucascullen/.gnupg")
     #gpg = gnupg.GPG(gnupghome='/path/to/home/directory')
     #value = input("What do you want to say in your post? :\n")
-    recipient = input("Whats the email address of the receipent? :\n")
+    recipient = "lucas@bitcoinbrisbane.com.au"  #input("Whats the email address of the receipent? :\n")
     print (recipient)
     
-    data = gpg.encrypt(title, "lucas@bitcoinbrisbane.com.au")
+    data = gpg.encrypt(title, ["lucas@bitcoinbrisbane.com.au"])
     print (data)
 
-    #file_name = str(uuid.uuid4())
-    #file_name = file_name + ".txt"
+    # #file_name = str(uuid.uuid4())
+    # #file_name = file_name + ".txt"
     file_name = "post.txt"
     print(file_name)
 
     with open(file_name, "rb") as f:
-        status = gpg.encrypt_file(f,recipients=[recipient],output="post.txt.gpg")
-        print("ok: ", status.ok)
+         status = gpg.encrypt_file(f,recipients=[recipient],output="post.txt.gpg")
+         print("ok: ", status.ok)
 
 
 def upload(file_path):

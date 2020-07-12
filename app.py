@@ -24,8 +24,9 @@ def listFriends():
 @app.route('/post', methods=['POST'])
 def createPost():
     content = request.json
-    print content['title']
-    return jsonify({"uuid":uuid})
+    print(content['title'])
+    #return jsonify({"uuid":uuid})
+    return 'ok'
 
 
 if __name__ == '__main__':

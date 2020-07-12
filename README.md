@@ -33,14 +33,17 @@ pipenv shell
 ```
 
 ## Process
-1. Create a PGP pair (if you dont have one)
+
+In this example, I will be running as `lucas@bitcoinbrisbane.com.au` PubKey `FAFF0BB27DD32B8EBA2E41F60A808AD53C602BF1` and posting to a friend `lucas@dltx.io` PubKey `31C3DF951686F51D882C74570D2934925D219FFA`
+
+1. Create your PGP pair (if you dont have one)
 2. Upload to a key server.  We use keys.openpgp.org
-3. Create content
+3. Create content json object
+4. Encrypt the json object with your friends PubKey
+5. Create a lbry channel with the claim id as your PubKey.  Eg ``
+6. Upload the encrypted json object to lbry.io
 
 A lbry.io channel is created with your PGP/GPG pub key finger print
-
-`31C3DF951686F51D882C74570D2934925D219FFA`
-
 
 ### Content Schema
 

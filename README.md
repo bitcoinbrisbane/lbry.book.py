@@ -11,6 +11,10 @@ This project is a Python Flask API for a simple social media app using lbry.io t
 
 Install pipenv ([official instructions](https://pipenv.pypa.io/en/latest/install/#installing-pipenv))
 
+## Setup
+
+### Mac
+
 ```bash
 brew install pipenv
 # Sets config to create the venv in the project directory rather than mapping it globally
@@ -20,19 +24,19 @@ echo 'export PIPENV_VENV_IN_PROJECT=1' >> ~/.profile
 sudo apt-get install build-dep python3-psycopg2
 ```
 
-Linux
+### Linux
 
 ```bash
 pip install pipenv
 ```
 
-## Create a pipenv
+### Create a pipenv
 
 ```bash
 pipenv shell
 ```
 
-## Process
+## The process
 
 In this example, I will be running as `lucas@bitcoinbrisbane.com.au` PubKey `FAFF0BB27DD32B8EBA2E41F60A808AD53C602BF1` and posting to a friend `lucas@dltx.io` PubKey `31C3DF951686F51D882C74570D2934925D219FFA`
 
@@ -45,7 +49,7 @@ In this example, I will be running as `lucas@bitcoinbrisbane.com.au` PubKey `FAF
 
 A lbry.io channel is created with your PGP/GPG pub key finger print
 
-### Content Schema
+## Content Schema
 
 ```json
 {
@@ -60,7 +64,9 @@ A lbry.io channel is created with your PGP/GPG pub key finger print
 }
 ```
 
-![ScreenShot](Screenshot from 2020-07-12 15-51-29.png)
+## Content now appears in lbry
+
+![ScreenShot](Screenshot.png)
 
 ## Notes and thanks
 

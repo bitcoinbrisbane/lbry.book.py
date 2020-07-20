@@ -38,7 +38,7 @@ pipenv shell
 
 ## The process
 
-In this example, I will be running as `lucas@bitcoinbrisbane.com.au` PubKey `FAFF0BB27DD32B8EBA2E41F60A808AD53C602BF1` and posting to a friend `lucas@dltx.io` PubKey `31C3DF951686F51D882C74570D2934925D219FFA`
+In this example, I will be running as `lucas@bitcoinbrisbane.com.au` PubKey `F68AA906B5BE601AC49EF83DC61F975DEBDEDC6B` and posting to a friend `lucas@dltx.io` PubKey `31C3DF951686F51D882C74570D2934925D219FFA`
 
 1. Create your PGP pair (if you dont have one)
 2. Upload to a key server.  We use keys.openpgp.org
